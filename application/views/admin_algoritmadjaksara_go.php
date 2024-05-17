@@ -153,13 +153,13 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 
 				// Example usage
 				$graph = [
-					'A' => ['B' => 54, 'E' => 72],
-					'B' => ['A' => 54, 'C' => 67],
-					'C' => ['B' => 67, 'D' => 25, 'F' => 44, 'Z' => 41],
-					'D' => ['C' => 25],
-					'E' => ['F' => 40,'A' => 72],
-					'F' => ['E' => 40,'C' => 44],
-					'Z' => ['C' => 41],
+					'Bekasi' => ['Cikampek' => 54, 'Cisarua' => 72],
+					'Cikampek' => ['Bekasi' => 54, 'Padalarang' => 67],
+					'Padalarang' => ['Cikampek' => 67, 'Lembang' => 25, 'Cianjur' => 44, 'KawahPutih' => 41],
+					'Lembang' => ['Padalarang' => 25],
+					'Cisarua' => ['Cianjur' => 40,'Bekasi' => 72],
+					'Cianjur' => ['Cisarua' => 40,'Padalarang' => 44],
+					'KawahPutih' => ['Padalarang' => 41],
 				];
 
 				$dijkstra = new Dijkstra($graph);

@@ -92,25 +92,25 @@
 					<div class="form-group mb-2">
 						<label for="nama">Tujuan Awal:</label>
 						<select name="tujuan_awal" class="form-select" aria-label="Default select example">
-						  <option value="A">Bekasi</option>
-						  <option value="B">Cikampek</option>
-						  <option value="C">Padalarang</option>
-						  <option value="D">Lembang</option>
-						  <option value="E">Cisarua</option>
-						  <option value="F">Cianjur</option>
-						  <option value="Z">KawahPutih</option>
+						  <option value="Bekasi">Bekasi</option>
+						  <option value="Cikampek">Cikampek</option>
+						  <option value="Padalarang">Padalarang</option>
+						  <option value="Lembang">Lembang</option>
+						  <option value="Cisarua">Cisarua</option>
+						  <option value="Cianjur">Cianjur</option>
+						  <option value="KawahPutih">KawahPutih</option>
 						</select>					
 					</div>
 					<div class="form-group mb-2">
 						<label for="nama">Tujuan Akhir:</label>
 						<select name="tujuan_akhir" class="form-select" aria-label="Default select example">
-						  <option value="A">Bekasi</option>
-						  <option value="B">Cikampek</option>
-						  <option value="C">Padalarang</option>
-						  <option value="D">Lembang</option>
-						  <option value="E">Cisarua</option>
-						  <option value="F">Cianjur</option>
-						  <option value="Z">KawahPutih</option>
+						  <option value="Bekasi">Bekasi</option>
+						  <option value="Cikampek">Cikampek</option>
+						  <option value="Padalarang">Padalarang</option>
+						  <option value="Lembang">Lembang</option>
+						  <option value="Cisarua">Cisarua</option>
+						  <option value="Cianjur">Cianjur</option>
+						  <option value="KawahPutih">KawahPutih</option>
 						</select>
 					</div>
 					<button type="submit" class="btn btn-success btn-block">Kirim</button>

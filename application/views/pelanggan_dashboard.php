@@ -68,6 +68,7 @@
         <th scope="col">Tujuan</th>
         <th scope="col">Armada</th>
         <th scope="col">Harga</th>
+        <th scope="col">Pembayaran</th>
       </tr>
     </thead>
     <tbody>
@@ -78,6 +79,7 @@
         <td><?=$booking->nama_tujuan?></td>
         <td><?=$booking->nama_armada?></td>
         <td>Rp <?=number_format($booking->harga)?></td>
+        <td><?= $booking->sudah_bayar == true ? 'Lunas' : '<span class="text-danger">Belum Bayar</span>' ?></td>
       </tr>
       <?php endforeach; ?>
       <!-- Tambahkan lebih banyak baris sesuai dengan kebutuhan -->
