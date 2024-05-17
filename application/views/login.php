@@ -86,7 +86,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 			  
 			  <form method="post" action="<?=site_url('login/login_go')?>">
 				  <div class="form-outline form-white mb-2">
-					<input type="text" name="id" id="typeEmailX" class="form-control form-control-lg" />
+					<input type="text" name="nama_admin" id="typeEmailX" class="form-control form-control-lg" />
 					<label class="form-label" for="typeEmailX">ID</label>
 				  </div>
 

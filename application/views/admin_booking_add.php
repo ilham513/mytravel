@@ -88,27 +88,43 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 				<h5 class="mb-0"><strong>Tambah Booking</strong></h5>
 			  </div>
 			  <div class="card-body">
-				<form action="<?=site_url('/admin/pelanggan_add_go')?>" method="post">
+				<form action="<?=site_url('/admin/booking_add_go')?>" method="post">
 					<div class="form-group mb-2">
-					  <label for="nama">Nama Pelanggan:</label>
-					  <input name="nama_pelanggan" type="text" class="form-control" id="nama" placeholder="Masukkan nama....">
+					  <label for="nama">Pilih Tujuan:</label>
+						<select name="id_tujuan" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+							<?php foreach($array_tujuan as $tujuan): ?>
+							<option value="<?=$tujuan->id_tujuan?>"><?=$tujuan->nama_tujuan?></option>
+							<?php endforeach; ?>
+						</select>
 					</div>
 					<div class="form-group mb-2">
-					  <label for="nama">Tempat Lahir:</label>
-					  <input name="tempat_lahir" type="text" class="form-control" id="nama" placeholder="Masukkan Tempat Lahir....">
+						<label for="nama">Nama Pelanggan:</label>
+						<select name="id_pelanggan" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+							<?php foreach($array_pelanggan as $pelanggan): ?>
+							<option value="<?=$pelanggan->id_pelanggan?>"><?=$pelanggan->nama_pelanggan?></option>
+							<?php endforeach; ?>
+						</select>
 					</div>
 					<div class="form-group mb-2">
-					  <label for="nama">Tanggal Lahir:</label>
-					  <input name="tanggal_lahir" type="date" class="form-control" id="nama">
+					  <label for="nama">Tanggal Keberangkatan:</label>
+					  <input name="tanggal_keberangkatan" type="date" class="form-control" id="nama">
 					</div>
 					<div class="form-group mb-2">
-					  <label for="nama">Alamat:</label>
-					  <input name="alamat" type="text" class="form-control" id="nama" placeholder="Masukkan alamat....">
+					  <label for="nama">Armada:</label>
+						<select name="id_armada" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+							<?php foreach($array_armada as $armada): ?>
+							<option value="<?=$armada->id_armada?>"><?=$armada->nama_armada?></option>
+							<?php endforeach; ?>
+						</select>
 					</div>
 					<div class="form-group mb-2">
-					  <label for="nama">Nomor Telpon:</label>
-					  <input name="no_telp" type="text" class="form-control" id="nama" placeholder="Masukkan nomor telpon....">
-					</div>
+					  <label for="nama">Paket:</label>
+						<select name="paket" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+							<option value="Ekonomis">Ekonomis</option>
+							<option value="Reguler">Reguler</option>
+							<option value="VIP">VIP</option>
+						</select>
+					</div>					
 					<button type="submit" class="btn btn-success btn-block">Kirim</button>
 				  </form>			  
 			  </div>

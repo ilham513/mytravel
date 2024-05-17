@@ -89,7 +89,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 			  </div>
 			  <div class="card-body">
 				<div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-end">
-				  <a href="<?=site_url('admin/booking_add')?>"><button class="btn btn-success fw-bold" type="button">Tambah Pelanggan</button></a>
+				  <a href="<?=site_url('admin/tujuan_add')?>"><button class="btn btn-success fw-bold" type="button">Tambah Pelanggan</button></a>
 				</div>
 
 				<table class="table table-striped" id="barangTable">
@@ -103,36 +103,18 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 						</tr>
 					</thead>
 					<tbody>
+					<?php foreach($array_tujuan as $tujuan): ?>
 						<tr>
-							<td>01</td>
-							<td>Bali</td>
-							<td>Ekonomis</td>
-							<td>xxxxxx</td>
+							<td><?=$tujuan->id_tujuan?></td>
+							<td><?=$tujuan->nama_tujuan?></td>
+							<td><?=$tujuan->paket?></td>
+							<td>Rp <?=number_format($tujuan->harga)?></td>
 							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
+								<a href="<?=site_url('admin/tujuan_edit/'.$tujuan->id_tujuan)?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
+								<a href="<?=site_url('admin/tujuan_hapus/'.$tujuan->id_tujuan)?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
 							</td>
 						</tr>
-						<tr>
-							<td>02</td>
-							<td>Bali</td>
-							<td>Eksekutif</td>
-							<td>xxxxxx</td>
-							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>03</td>
-							<td>Lombok</td>
-							<td>Ekonomis</td>
-							<td>xxxxxx</td>
-							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
-							</td>
-						</tr>
+					<?php endforeach; ?>
 						<!-- Tambahkan baris lain sesuai kebutuhan -->
 					</tbody>
 				</table>								

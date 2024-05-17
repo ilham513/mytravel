@@ -1,12 +1,28 @@
 <?php
 
 class Akun_model extends CI_Model{
+	public function login_pelanggan($email, $password)
+	{
+		$this->db->where('email', $email);
+        $this->db->where('password', md5($password));
+        $query = $this->db->get('pelanggan');
+		
+		// var_dump($this->db->last_query());die();
+        return $query->row();
+	}
 
-	public function cek_akun($id, $password)
+	public function logout_pelanggan() {
+        $this->session->unset_userdata('id_pelanggan');
+        redirect('/');
+    }
+
+	public function cek_akun($nama_admin, $password)
 	{
 		//query ambil data login
-		$query = $this->db->query("SELECT * FROM akun WHERE id='$id' AND password='$password'");
+		$query = $this->db->query("SELECT * FROM admin WHERE nama_admin='$nama_admin' AND password='$password'");
 		$result = $query->result_array();
+		
+		// var_dump($query);die();
 		
 		//membuat session login
 		if (count($result) > 0) {

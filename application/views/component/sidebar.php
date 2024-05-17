@@ -22,7 +22,11 @@
 				class="fas fa-map-location-dot  ms-1 me-3"></i><span>Tujuan</span>
 		  </a>
 
-          <a href="<?=site_url('akun/logout')?>"" class="list-group-item list-group-item-action py-2 ripple" id="status"><i 
+          <a href="<?=site_url('admin/algoritmadjaksara')?>"" class="list-group-item list-group-item-action py-2 ripple" id="status"><i 
+				class="fas fa-lightbulb  ms-1 me-3"></i><span>Rute Terdekat</span>
+		  </a>
+
+          <a href="<?=site_url('admin/logout')?>"" class="list-group-item list-group-item-action py-2 ripple" id="status"><i 
 				class="fas fa-right-from-bracket ms-1 me-3"></i><span>Logout</span>
 		  </a>
 

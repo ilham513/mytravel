@@ -99,61 +99,27 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 							<th>ID Booking</th>
 							<th>Tujuan</th>
 							<th>Pelanggan</th>
-							<th>Tanggal</th>
+							<th>Tanggal Keberangkatan</th>
 							<th>Armada</th>
 							<th>Paket</th>
 							<th>Aksi</th>
 						</tr>
 					</thead>
 					<tbody>
+						<?php foreach($array_booking as $booking): ?>
 						<tr>
-							<td>BK001</td>
-							<td>Bali</td>
-							<td>Bapak A</td>
-							<td>2-07-2024</td>
-							<td>Sinar Jaya</td>
-							<td>VIP</td>
+							<td>TRV00<?= $booking->id_booking?></td>
+							<td><?= $booking->nama_tujuan?></td>
+							<td><?= $booking->nama_pelanggan?></td>
+							<td><?= $booking->tanggal_keberangkatan?></td>
+							<td><?= $booking->nama_armada?></td>
+							<td><?= $booking->paket?></td>
 							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
+								<a href="<?=site_url('admin/booking_edit/'.$booking->id_booking)?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
+								<a href="<?=site_url('admin/booking_hapus/'.$booking->id_booking)?>"><span class="fw-bold text-danger" onclick="return confirm('Apa anda yakin ingin menghapusnya?');"><i class="fa-solid fa-trash"></i></span></a>
 							</td>
 						</tr>
-						<tr>
-							<td>BK002</td>
-							<td>Bali</td>
-							<td>Bapak B</td>
-							<td>20-08-2024</td>
-							<td>NPM</td>
-							<td>Ekonomi</td>
-							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>BK003</td>
-							<td>Lombok</td>
-							<td>Ibu C</td>
-							<td>21-09-2024</td>
-							<td>Sinar Jaya</td>
-							<td>Eksekutif</td>
-							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>BK004</td>
-							<td>Bali</td>
-							<td>Bapak D</td>
-							<td>21-10-2024</td>
-							<td>Sinar Jaya</td>
-							<td>Eksekutif</td>
-							<td>
-								<a href="<?=site_url('kurir/edit/')?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
-								<a href="<?=site_url('kurir/hapus/')?>"><span class="fw-bold text-danger" onclick="return deletechecked('');"><i class="fa-solid fa-trash"></i></span></a>
-							</td>
-						</tr>
+						<?php endforeach; ?>
 						<!-- Tambahkan baris lain sesuai kebutuhan -->
 					</tbody>
 				</table>								
