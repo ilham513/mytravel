@@ -92,25 +92,29 @@
 					<div class="form-group mb-2">
 						<label for="nama">Tujuan Awal:</label>
 						<select name="tujuan_awal" class="form-select" aria-label="Default select example">
-						  <option value="Bekasi">Bekasi</option>
-						  <option value="Cikampek">Cikampek</option>
-						  <option value="Padalarang">Padalarang</option>
-						  <option value="Lembang">Lembang</option>
-						  <option value="Cisarua">Cisarua</option>
-						  <option value="Cianjur">Cianjur</option>
-						  <option value="KawahPutih">KawahPutih</option>
+						  <option value="Terminal Bekasi">Terminal Bekasi</option>
+						  <option value="Duta Harapan">Duta Harapan</option>
+						  <option value="Summarecon Bekasi">Summarecon Bekasi</option>
+						  <option value="Kuliner Alun Alun">Kuliner Alun Alun</option>
+						  <option value="Hutan Bambu">Hutan Bambu</option>
+						  <option value="JL Siliwangi">JL Siliwangi</option>
+						  <option value="Situ Rawa Gede">Situ Rawa Gede</option>
+						  <option value="Curug Parigi">Curug Parigi</option>
+						  <option value="Situ Rawa Pulo">Situ Rawa Pulo</option>
 						</select>					
 					</div>
 					<div class="form-group mb-2">
 						<label for="nama">Tujuan Akhir:</label>
 						<select name="tujuan_akhir" class="form-select" aria-label="Default select example">
-						  <option value="Bekasi">Bekasi</option>
-						  <option value="Cikampek">Cikampek</option>
-						  <option value="Padalarang">Padalarang</option>
-						  <option value="Lembang">Lembang</option>
-						  <option value="Cisarua">Cisarua</option>
-						  <option value="Cianjur">Cianjur</option>
-						  <option value="KawahPutih">KawahPutih</option>
+						  <option value="Terminal Bekasi">Terminal Bekasi</option>
+						  <option value="Duta Harapan">Duta Harapan</option>
+						  <option value="Summarecon Bekasi">Summarecon Bekasi</option>
+						  <option value="Kuliner Alun Alun">Kuliner Alun Alun</option>
+						  <option value="Hutan Bambu">Hutan Bambu</option>
+						  <option value="JL Siliwangi">JL Siliwangi</option>
+						  <option value="Situ Rawa Gede">Situ Rawa Gede</option>
+						  <option value="Curug Parigi">Curug Parigi</option>
+						  <option value="Situ Rawa Pulo">Situ Rawa Pulo</option>
 						</select>
 					</div>
 					<button type="submit" class="btn btn-success btn-block">Kirim</button>

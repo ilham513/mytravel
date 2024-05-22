@@ -101,7 +101,6 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 							<th>Pelanggan</th>
 							<th>Tanggal Keberangkatan</th>
 							<th>Armada</th>
-							<th>Paket</th>
 							<th>Aksi</th>
 						</tr>
 					</thead>
@@ -113,7 +112,6 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 							<td><?= $booking->nama_pelanggan?></td>
 							<td><?= $booking->tanggal_keberangkatan?></td>
 							<td><?= $booking->nama_armada?></td>
-							<td><?= $booking->paket?></td>
 							<td>
 								<a href="<?=site_url('admin/booking_edit/'.$booking->id_booking)?>"><span class="fw-bold me-2 text-primary" onclick="return editchecked('');"><i class="fa-solid fa-pen-to-square"></i></span></a>
 								<a href="<?=site_url('admin/booking_hapus/'.$booking->id_booking)?>"><span class="fw-bold text-danger" onclick="return confirm('Apa anda yakin ingin menghapusnya?');"><i class="fa-solid fa-trash"></i></span></a>

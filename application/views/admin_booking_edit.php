@@ -120,7 +120,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 							<?php endforeach; ?>
 						</select>
 					</div>
-					<div class="form-group mb-2">
+					<div class="form-group mb-2 d-none">
 					  <label for="nama">Paket:</label>
 						<select name="paket" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 							<option value="Ekonomis">Ekonomis</option>

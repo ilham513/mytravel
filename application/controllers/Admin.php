@@ -184,7 +184,7 @@ class Admin extends CI_Controller {
 	public function tujuan_hapus($id)
 	{
 		//load model hapus data
-		$this->crud_model->menghapus_data_id('tujuan','tipe_armada',$id);
+		$this->crud_model->menghapus_data_id('tujuan','id_tujuan',$id);
 
 		//redirect
 		redirect('/admin/tujuan', 'refresh');

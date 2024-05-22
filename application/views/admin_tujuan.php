@@ -89,7 +89,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 			  </div>
 			  <div class="card-body">
 				<div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-end">
-				  <a href="<?=site_url('admin/tujuan_add')?>"><button class="btn btn-success fw-bold" type="button">Tambah Pelanggan</button></a>
+				  <a href="<?=site_url('admin/tujuan_add')?>"><button class="btn btn-success fw-bold" type="button">Tambah Tujuan</button></a>
 				</div>
 
 				<table class="table table-striped" id="barangTable">
@@ -97,7 +97,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 						<tr class="bg-primary text-white">
 							<th>Id Tujuan</th>
 							<th>Tempat Tujuan</th>
-							<th>Paket</th>
+							<th>Keterangan</th>
 							<th>Harga</th>
 							<th>Aksi</th>
 						</tr>

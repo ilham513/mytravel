@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2024 at 10:14 AM
+-- Generation Time: May 22, 2024 at 02:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -58,7 +58,6 @@ CREATE TABLE `armada` (
 --
 
 INSERT INTO `armada` (`id_armada`, `nama_armada`, `tipe_mobil`, `jumlah_tampungan`) VALUES
-(1, 'Mayangsari Bhakti', 'Bus', 40),
 (2, 'Mikrolet', 'Minibus', 20);
 
 -- --------------------------------------------------------
@@ -77,15 +76,6 @@ CREATE TABLE `booking` (
   `paket` varchar(255) NOT NULL,
   `sudah_bayar` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`id_booking`, `id_tujuan`, `id_pelanggan`, `tanggal_keberangkatan`, `stamp_waktu`, `id_armada`, `paket`, `sudah_bayar`) VALUES
-(1, 1, 5, '2024-05-23', '2024-05-16 13:33:52', 1, 'Ekonomis', 0),
-(2, 1, 5, '2024-05-28', '2024-05-16 13:34:00', 1, 'Ekonomis', 0),
-(3, 1, 6, '2024-05-22', '2024-05-17 13:04:04', 1, 'Ekonomis', 0);
 
 -- --------------------------------------------------------
 
@@ -132,13 +122,12 @@ CREATE TABLE `tujuan` (
 --
 
 INSERT INTO `tujuan` (`id_tujuan`, `nama_tujuan`, `paket`, `harga`) VALUES
-(1, 'Padalarang', 'Ekonomis', 250000),
-(2, 'Lembang', 'Ekonomis', 220000),
-(3, 'Cisarua', 'Ekonomis', 150000),
-(4, 'Kawah Putih', 'Ekonomis', 280000),
-(5, 'Padalarang Reguler', 'Reguler', 280000),
-(6, 'Lembang Reguler', 'Reguler', 250000),
-(7, 'Kawah Putih VIP', 'VIP', 320000);
+(9, 'Situ Rawa Gede', 'Bojong menteng, kota Bekasi, jawa barat.\r\nJam operasional : setiap hari, 07:00-22:00\r\nFasilitas 	 : penyewaan sampan, perahu bebek, gazebo, spot foto, area kuliner.', 0),
+(10, 'Situ rawa pulo', 'Lokasi 		 : jatikarya, kec. Jati sampurna, rt.009/rw.014\r\nJam operasional : setiap hari, 24 jam\r\nFasilitas 	 : trek jogging, trek bersepeda.', 0),
+(11, 'Wisata kuliner alun-alun kota Bekasi', 'Lokasi 		 : jl. Pramuka no.59, rt.006/rw.006, marga jaya, kec. Bekasi Selatan, kota Bekasi, jawa barat.\r\nJam operasional : setiap hari, 24 jam\r\nFasilitas 	 : taman, bangku-bangku taman, area olahraga, area kuliner, area parkir.', 0),
+(12, 'Curug Parigi', 'Lokasi 		 : jl. Pangkalan 5, cikiwul, bantar gebang, kota Bekasi.\r\nJam operasional : setiap hari, 06:00-17:00', 0),
+(13, 'Danau duta harapan', 'Lokasi 		 : perum. Duta harapan, rt.012/rw.014, duta harapan, Bekasi utara.\r\nJam operasional : setiap hari, 24 jam\r\nFasilitas 	 : area parkir, area kuliner, area olahraga, gazebo, trek jogging', 0),
+(14, 'Hutan bambu', 'Lokasi 		 : pinggir kali Bekasi, rt.004/rw.026, kel. Margahayu, kec. Bekasi timur, kota Bekasi.\r\nJam operasional : setiap hari, 08:00-17:00\r\nFasilitas 	 : gazebo, spot foto, toilet, musholla.', 0);
 
 --
 -- Indexes for dumped tables
@@ -209,7 +198,7 @@ ALTER TABLE `pelanggan`
 -- AUTO_INCREMENT for table `tujuan`
 --
 ALTER TABLE `tujuan`
-  MODIFY `id_tujuan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_tujuan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables

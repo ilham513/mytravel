@@ -97,12 +97,8 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 					  <input name="nama_tujuan" type="text" class="form-control" id="nama" value="<?=$obj_tujuan->nama_tujuan?>">
 					</div>
 					<div class="form-group mb-2">
-					  <label for="nama">Paket:</label>
-						<select name="paket" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-							<option value="Ekonomis">Ekonomis</option>
-							<option value="Reguler">Reguler</option>
-							<option value="VIP">VIP</option>
-						</select>
+					  <label for="nama">Keterangan:</label>
+					  <input name="paket" type="text" class="form-control" id="nama" value="<?=$obj_tujuan->paket?>">
 					</div>
 					<div class="form-group mb-2">
 					  <label for="nama">Harga:</label>

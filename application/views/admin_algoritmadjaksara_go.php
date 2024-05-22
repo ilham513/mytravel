@@ -153,13 +153,16 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 
 				// Example usage
 				$graph = [
-					'Bekasi' => ['Cikampek' => 54, 'Cisarua' => 72],
-					'Cikampek' => ['Bekasi' => 54, 'Padalarang' => 67],
-					'Padalarang' => ['Cikampek' => 67, 'Lembang' => 25, 'Cianjur' => 44, 'KawahPutih' => 41],
-					'Lembang' => ['Padalarang' => 25],
-					'Cisarua' => ['Cianjur' => 40,'Bekasi' => 72],
-					'Cianjur' => ['Cisarua' => 40,'Padalarang' => 44],
-					'KawahPutih' => ['Padalarang' => 41],
+					'Duta Harapan' => ['Summarecon Bekasi' => 3],
+					'Summarecon Bekasi' => ['Duta Harapan' => 3, 'Kuliner Alun Alun' => 2],
+					'Kuliner Alun Alun' => ['Summarecon Bekasi' => 2, 'Terminal Bekasi' => 2, 'Mall Metropolitan' => 3],
+					'Terminal Bekasi' => ['Kuliner Alun Alun' => 2],
+					'Mall Metropolitan' => ['Kuliner Alun Alun' => 3,'Hutan Bambu' => 2],
+					'Hutan Bambu' => ['Mall Metropolitan' => 2,'JL Siliwangi' => 5],
+					'JL Siliwangi' => ['Hutan Bambu' => 5,'Situ Rawa Gede' => 4, 'Situ Rawa Pulo' => 10, 'Curug Parigi' => 6],
+					'Situ Rawa Gede' => ['JL Siliwangi' => 4],
+					'Curug Parigi' => ['JL Siliwangi' => 6],
+					'Situ Rawa Pulo' => ['JL Siliwangi' => 10],
 				];
 
 				$dijkstra = new Dijkstra($graph);

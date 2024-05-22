@@ -212,41 +212,6 @@
   </div>
 
 
-<div class="container py-5">
-    <h1 class="mb-4">Pilihkan Paket</h1>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Hemat</h5>
-            <p class="card-text">Termasuk: Transportasi, Penginapan, City Tour.</p>
-            <a href="<?=site_url().'/welcome/homepage_daftar'?>" class="btn fw-bold btn-oranye-cerah">Pilih</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Keluarga</h5>
-            <p class="card-text">Termasuk: Transportasi, Penginapan, Aktivitas Keluarga.</p>
-            <a href="<?=site_url().'/welcome/homepage_daftar'?>" class="btn fw-bold btn-oranye-cerah">Pilih</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Solo</h5>
-            <p class="card-text">Termasuk: Transportasi, Penginapan, Pengalaman Wisata Solo.</p>
-            <a href="<?=site_url().'/welcome/homepage_daftar'?>" class="btn fw-bold btn-oranye-cerah">Pilih</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
 <!-- Bootstrap JS (Optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	
