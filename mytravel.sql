@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2024 at 04:39 PM
+-- Generation Time: May 22, 2024 at 10:14 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -74,17 +74,18 @@ CREATE TABLE `booking` (
   `tanggal_keberangkatan` date NOT NULL,
   `stamp_waktu` timestamp NOT NULL DEFAULT current_timestamp(),
   `id_armada` int(255) NOT NULL,
-  `paket` varchar(255) NOT NULL
+  `paket` varchar(255) NOT NULL,
+  `sudah_bayar` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `booking`
 --
 
-INSERT INTO `booking` (`id_booking`, `id_tujuan`, `id_pelanggan`, `tanggal_keberangkatan`, `stamp_waktu`, `id_armada`, `paket`) VALUES
-(1, 1, 5, '2024-05-23', '2024-05-16 13:33:52', 1, 'Ekonomis'),
-(2, 1, 5, '2024-05-28', '2024-05-16 13:34:00', 1, 'Ekonomis'),
-(3, 1, 6, '2024-05-22', '2024-05-17 13:04:04', 1, 'Ekonomis');
+INSERT INTO `booking` (`id_booking`, `id_tujuan`, `id_pelanggan`, `tanggal_keberangkatan`, `stamp_waktu`, `id_armada`, `paket`, `sudah_bayar`) VALUES
+(1, 1, 5, '2024-05-23', '2024-05-16 13:33:52', 1, 'Ekonomis', 0),
+(2, 1, 5, '2024-05-28', '2024-05-16 13:34:00', 1, 'Ekonomis', 0),
+(3, 1, 6, '2024-05-22', '2024-05-17 13:04:04', 1, 'Ekonomis', 0);
 
 -- --------------------------------------------------------
 
