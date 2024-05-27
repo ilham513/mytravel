@@ -10,6 +10,7 @@ class Pelanggan extends CI_Controller {
 		$this->load->model('crud_model');
 
 		if (!$this->session->userdata('id_pelanggan')) {
+			echo '<script>alert("Anda belum login! Silahkan login terlebih dahulu....")</script>';
             redirect('/welcome/homepage_login');
         }
 	}
@@ -53,6 +54,7 @@ class Pelanggan extends CI_Controller {
 
 	public function logout()
 	{
+		echo '<script>alert("Berhasil logout!")</script>';
 		$this->akun_model->logout_pelanggan();
 	}
 }

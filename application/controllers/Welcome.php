@@ -57,6 +57,7 @@ class Welcome extends CI_Controller {
             redirect('pelanggan');
         } else {
             $this->session->set_flashdata('error', 'Invalid email or password');
+			echo '<script>alert("Login gagal! Harap periksa email atau password")</script>';
             redirect('welcome/homepage_login');
         }
 	}
