@@ -50,15 +50,20 @@ class Welcome extends CI_Controller {
 
         $user = $this->akun_model->login_pelanggan($email, $password);
 
-		// var_dump($user);die();
+		//var_dump($user);die();
 
 		if ($user) {
             $this->session->set_userdata('id_pelanggan', $user->id_pelanggan);
             redirect('pelanggan');
         } else {
-            $this->session->set_flashdata('error', 'Invalid email or password');
-			echo '<script>alert("Login gagal! Harap periksa email atau password")</script>';
-            redirect('welcome/homepage_login');
+           ##$this->session->set_flashdata('error', 'Invalid email or password');
+			echo "
+			<script>
+			alert('Password atau email salah!!');
+			window.location = '".site_url('welcome/homepage_login')."';
+			</script>";
+			die();
+            // redirect('welcome/homepage_login');
         }
 	}
 }

@@ -9,9 +9,15 @@ class Pelanggan extends CI_Controller {
 		$this->load->model('akun_model');
 		$this->load->model('crud_model');
 
+		// var_dump($_SESSION);die();
+
 		if (!$this->session->userdata('id_pelanggan')) {
-			echo '<script>alert("Anda belum login! Silahkan login terlebih dahulu....")</script>';
-            redirect('/welcome/homepage_login');
+			echo "
+			<script>
+			alert('Session Salah!');
+			window.location = '".site_url('welcome/homepage_login')."';
+			</script>";
+            // redirect('/welcome/homepage_login');
         }
 	}
 
@@ -22,6 +28,17 @@ class Pelanggan extends CI_Controller {
 		// var_dump($data);die();
 
 		$this->load->view('pelanggan_dashboard',$data);
+	}
+
+	public function rute()
+	{	
+		$this->load->view('pelanggan_rute');
+	}
+
+	public function rute_go()
+	{	
+		// var_dump($_SESSION);die();
+		$this->load->view('pelanggan_rute_go');
 	}
 
 	public function booking_add()
