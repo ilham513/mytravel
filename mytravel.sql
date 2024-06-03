@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2024 at 02:04 PM
+-- Generation Time: Jun 03, 2024 at 03:28 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -77,6 +77,13 @@ CREATE TABLE `booking` (
   `sudah_bayar` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`id_booking`, `id_tujuan`, `id_pelanggan`, `tanggal_keberangkatan`, `stamp_waktu`, `id_armada`, `paket`, `sudah_bayar`) VALUES
+(4, 9, 7, '2024-05-30', '2024-05-27 06:09:02', 2, 'Ekonomis', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -97,12 +104,13 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat`, `no_telpon`, `email`, `password`) VALUES
-(1, 'Bapak Andi', 'Bekasi', '0899999', '', ''),
-(2, 'Ibu Budi', 'Bekasi', '0877777', '', ''),
-(3, 'ilham', '', '089898', 'jennie@gmail.com', 'b63d204bf086017e34d8bd27ab969f28'),
+(1, 'Bapak Andi', 'Bekasi Satu', '0899999', '', ''),
+(2, 'Ibu Budi', 'Bekasi Dia', '0877777', '', ''),
+(3, 'ilham', 'jakarta', '089898', 'jennie@gmail.com', 'b63d204bf086017e34d8bd27ab969f28'),
 (4, 'budi', '', '08989', 'budi@budi.com', '9f1c441765f9cddfa618413dd25fbfbc'),
 (5, 'ilham', '', '', 'ilham@ilham.com', '9f51844de353343b080b320689929471'),
-(6, 'budi', '', '08666', 'budi@budi.com', '1f4bb7cc3c45d7afcc36c8748b4a148a');
+(6, 'budi', '', '08666', 'budi@budi.com', '1f4bb7cc3c45d7afcc36c8748b4a148a'),
+(7, 'nita', '', '08989', 'nita@nita.com', '03d269b48b477879200f49752c04e31d');
 
 -- --------------------------------------------------------
 
@@ -186,13 +194,13 @@ ALTER TABLE `armada`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id_booking` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_booking` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_pelanggan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tujuan`
