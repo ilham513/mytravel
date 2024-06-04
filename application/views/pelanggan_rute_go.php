@@ -131,6 +131,9 @@
 				L.latLng(<?=$koordinat_awal?>), // Koordinat awal
 				L.latLng(<?=$koordinat_akhir?>)  // Koordinat Akhir
 			],
+			lineOptions: {
+				styles: [{color: 'blue', opacity: 1, weight: 7}]
+			},
 			routeWhileDragging: true
 		}).addTo(map);
 		</script>
