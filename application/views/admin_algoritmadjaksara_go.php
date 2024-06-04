@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Djaksara</title>
+    <title>Dijkstra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +91,7 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 		  <section class="mb-4">
 			<div class="card">
 			  <div class="card-header py-3">
-				<h5 class="mb-0"><strong>Perhitungan Rute Terpendek Menggunakan Algoritma Djaksara</strong></h5>
+				<h5 class="mb-0"><strong>Perhitungan Rute Terpendek Menggunakan Algoritma Dijkstra</strong></h5>
 			  </div>
 			  <div class="card-body">
 				<?php
@@ -270,6 +270,9 @@ background: linear-gradient(94deg, rgba(22,58,118,1) 0%, rgba(34,92,187,1) 100%)
 				L.latLng(<?=$koordinat_awal?>), // Koordinat awal
 				L.latLng(<?=$koordinat_akhir?>)  // Koordinat Akhir
 			],
+			lineOptions: {
+				styles: [{color: 'blue', opacity: 1, weight: 7}]
+			},
 			routeWhileDragging: true
 		}).addTo(map);
 		</script>

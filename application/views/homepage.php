@@ -139,22 +139,22 @@
 		<div class="carousel-item active">
 		  <img src="<?=base_url().'img/corusel1.jpg'?>" height="400px" class="d-block w-100" alt="...">
 		  <div class="carousel-caption d-none d-md-block">
-			<h5>Pantai Lombok</h5>
-			<p>Nikmati keindahan alam yang memesona di Pantai Lombok! Dengan pasir putih yang lembut, air laut yang jernih, dan pemandangan sunset yang menakjubkan. Liburan tak terlupakan menanti Anda di sini!</p>
+			<h5>Situ Rawa Gede</h5>
+			<p>Bojong menteng, kota Bekasi, jawa barat. Jam operasional : setiap hari, 07:00-22:00 Fasilitas : penyewaan sampan, perahu bebek, gazebo, spot foto, area kuliner.</p>
 		  </div>
 		</div>
 		<div class="carousel-item">
 		  <img src="<?=base_url().'img/corusel2.jpg'?>" height="400px" class="d-block w-100" alt="...">
 		  <div class="carousel-caption d-none d-md-block">
-			<h5>Gunung Kidul</h5>
-			<p>Temukan keajaiban alam di Gunung Kidul! Dengan pesona pantai eksotis, gua menakjubkan, dan panorama perbukitan yang memukau. Petualangan tak terlupakan menanti di sini!</p>
+			<h5>Situ Rawa Pulo</h5>
+			<p>Lokasi : jatikarya, kec. Jati sampurna, rt.009/rw.014 Jam operasional : setiap hari, 24 jam Fasilitas : trek jogging, trek bersepeda.</p>
 		  </div>
 		</div>
 		<div class="carousel-item">
 		  <img src="<?=base_url().'img/corusel3.jpg'?>" height="400px" class="d-block w-100" alt="...">
 		  <div class="carousel-caption d-none d-md-block">
-			<h5>Candi Bali</h5>
-			<p>Telusuri keindahan sejarah di Candi Bali! Dengan arsitektur klasik yang megah, nuansa spiritual yang memikat, dan aura mistis yang memikat. Pengalaman budaya yang tak terlupakan menanti di sini!</p>
+			<h5>Wisata kuliner alun-alun kota Bekasi</h5>
+			<p>Lokasi : jl. Pramuka no.59, rt.006/rw.006, marga jaya, kec. Bekasi Selatan, kota Bekasi, jawa barat. Jam operasional : setiap hari, 24 jam Fasilitas : taman, bangku-bangku taman, area olahraga, area kuliner, area parkir.</p>
 		  </div>
 		</div>
 	  </div>

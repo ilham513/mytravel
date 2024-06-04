@@ -45,7 +45,7 @@
 
   <div class="card">
 			  <div class="card-header py-3">
-				<h5 class="mb-0"><strong>Perhitungan Rute Terpendek Menggunakan Algoritma Djaksara</strong></h5>
+				<h5 class="mb-0"><strong>Perhitungan Rute Terpendek Menggunakan Algoritma Dijkstra</strong></h5>
 			  </div>
 			  <div class="card-body">
 				<form action="<?=site_url('/pelanggan/rute_go')?>" method="post">
